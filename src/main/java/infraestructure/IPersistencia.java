@@ -6,5 +6,7 @@ public interface IPersistencia {
 
     void setUser(Usuario user);
 
+    Usuario findByUsername(String username);
+
 
 }

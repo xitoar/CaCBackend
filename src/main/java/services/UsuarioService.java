@@ -12,4 +12,9 @@ public class UsuarioService implements IPersistencia {
     public void setUser(Usuario user) {
         persistencia.setUser(user);
     }
+
+    @Override
+    public Usuario findByUsername(String username) {
+        return persistencia.findByUsername(username);
+    }
 }
